@@ -1,0 +1,21 @@
+{
+  "name": "gbfs",
+  "version": "1.0.0-alpha",
+  "description": "General Bikeshare Feed Specification implementation",
+  "keywords": [
+    "gbfs",
+    "bikeshare"
+  ],
+  "homepage": "https://github.com/chbrown/gbfs-node",
+  "repository": "git://github.com/chbrown/gbfs-node.git",
+  "author": "Christopher Brown <io@henrian.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "^2.7.1"
+  },
+  "scripts": {
+    "prepare": "tsc -d",
+    "clean": "tsc -d --listEmittedFiles | sed 's/^TSFILE: //' | xargs rm -v"
+  }
+}
